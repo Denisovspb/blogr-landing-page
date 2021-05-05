@@ -1,0 +1,89 @@
+.services {
+    background: url(../../images/bg-pattern-circles.svg), linear-gradient(to right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    border-radius: 0 100px 0 100px;
+    // padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    // padding-bottom: 4rem;
+
+    @include breakpoint-down(medium){
+        background-position: center center;
+        padding-bottom: 6rem;
+    }
+
+    &__content {
+        // position: relative;
+        gap: 29rem;
+
+        @include breakpoint-down(medium){
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
+    &__image {
+        position: relative;
+        left: -20%;
+        // // position: relative;
+        // background-image: url(../../images/bg-pattern-circles.svg);
+        // background-size: cover;
+        // background-repeat: no-repeat;
+
+
+        min-height: 30rem;
+        // background-image: url(../../images/illustration-phones.svg);
+        //     background-repeat: no-repeat;
+        //     background-size: 52%;
+        //     background-position: -7% 120%;
+        //     left: 0;
+
+        // &::after {
+        //     content: '';
+        //     height: 100%;
+        //     width: 100%;
+        //     position: absolute;
+        //     background-image: url(../../images/illustration-phones.svg);
+        //     background-repeat: no-repeat;
+        //     background-size: 52%;
+        //     background-position: -7% 120%;
+        //     left: 0;
+
+        // }
+        
+        @include breakpoint-down(medium){
+            left: 0;
+            bottom: 6rem;
+        }
+
+
+        img {
+            position: absolute;
+            height: 138%;
+            bottom: -24%;
+
+            @include breakpoint-down(medium){
+                position: relative;
+            }
+        }
+    }
+
+    &__info {
+        // position: relative;
+        @include breakpoint-down(medium){
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 2.25rem;
+    }
+
+    &__text {
+        line-height: 1.5;
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,321 @@
+.header {
+    background: url(../../images/bg-pattern-intro.svg), linear-gradient(to right, $lightOrange, $lightRed2);
+    background-position: center left;
+    border-radius: 0 0 0 100px;
+    text-align: center;
+    padding: 3.875rem 2rem 9.625rem;
+
+    @include breakpoint-down(medium) {
+            background-position: center center;
+    }
+
+    nav {
+        margin-bottom: 8.375rem;
+
+        @include breakpoint-down(medium) {
+            display: block;
+            margin-bottom: 6.25rem;
+        }
+    }
+
+    &__nav {
+        gap: 4rem;
+
+        @include breakpoint-down(medium) {
+            gap: 0;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+
+        img {
+            width: 6.25rem;
+            height: 2.5rem;
+        }
+    }
+
+    &.open {
+        
+
+        .header__toggle {
+
+            > span:first-child {
+            transform: rotate(45deg);
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__toggle {
+
+        > span {
+            display: block;
+            width: 2rem;
+            height: 0.125rem;
+            background-color: $veryDarkBlackBlue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 5px 1px;
+
+            &:not(:last-child){
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    &__menu {
+        text-align: left;
+        font-family: 'Ubuntu', sans-serif;
+
+        li {
+            position: relative;
+        }
+
+        > li {
+            margin-right: 0.5rem;
+
+            &:hover .header__submenu {
+                display: block;
+            }
+
+            &:hover .header__link::after {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &__submenu {
+        display: none;
+        min-width: 10.5rem;
+        position: absolute;
+        left: 0;
+        top: 20px;
+        left: -0.9rem;
+        background-color: $white;
+        border-radius: 5px;
+        padding: 1.5rem;
+    }
+
+    &__sublink {
+        color: $veryDarkBlue;
+        display: inline-block;
+        margin-bottom: 1.25rem;
+
+        &.last {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+
+    &__link {
+        color: $white;
+        margin-right: 0.5rem;
+
+        &::after {
+            content: url(../../images/icon-arrow-light.svg);
+            margin-left: 0.5rem;
+            display: inline-block;
+            transition: all 250ms ease-in-out;
+        }
+    }
+
+    &__buttons {
+        gap: 2rem;
+
+        .login {
+            color: $white;
+            font-family: 'Ubuntu', sans-serif;
+
+            &::after {
+                display: block;
+                content: '';
+                border-bottom: solid 1px $white;  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+            }
+    
+            &:hover::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    &__burger-menu {
+        background: $white;
+        position: absolute;
+        font-size: 1.2rem;
+        width: calc(100% - 4rem);
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 3rem;
+        border-radius: 5px;
+        padding: 3rem 2rem;
+        z-index: 10;
+        box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    &__burger-links {
+        margin-bottom: 2rem;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: $grayishBlue;
+            border-radius: 1px;
+            display: inline-block;
+        }
+    }
+
+    &__burger-list {
+
+        li {
+            position: relative;
+        }
+
+        > li {
+
+            // &:hover .header__burger-sublist {
+            //     display: block;
+            // }
+
+            &:focus .header__burger-link::after {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &__burger-link {
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        color: $veryDarkGrayBlue;
+
+        &:hover, &:active, &:focus {
+            color: $veryDarkBlue;
+        }
+
+        &::after {
+            content: url(../../images/icon-arrow-dark.svg);
+            margin-left: 0.5rem;
+            display: inline-block;
+            transition: all 250ms ease-in-out;
+        }
+    }
+
+    &__burger-sublist {
+        display: none;
+        width: 100%;
+        background: $grayishBlue;
+        border-radius: 5px;
+        padding: 2rem ;
+        z-index: 10;
+        margin-bottom: 1rem;
+
+        li:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__burger-sublink {
+        font-weight: 600;
+        color: $veryDarkBlue;
+
+        &:hover {
+            color: $veryDarkGrayBlue;
+        }
+    }
+
+    &__burger-btns {
+        flex-direction: column;
+
+        a {
+            display: block;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .login {
+            color: $veryDarkGrayBlue;
+            font-family: 'Ubuntu', sans-serif;
+
+            &:hover {
+                color: $veryDarkBlue;
+            }
+        }
+
+        .last {
+            margin-bottom: 0;
+        }
+    }
+
+    &__cta-mobile {
+        background: linear-gradient(to right, $lightOrange, $lightRed2);
+        max-width: 8.625rem;
+        margin: 0 auto;
+        color: $white;
+        transition: box-shadow 200ms ease-in-out;
+
+        &:hover, &:active {
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1.25rem;
+
+        @include breakpoint-down(medium) {
+            margin-bottom: 1.125rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+
+        @include breakpoint-down(medium) {
+            margin-bottom: 2.625rem;
+        }
+    }
+
+    &__more {
+        gap: 1rem;
+    }
+
+    &__cta {
+
+        &:hover {
+            background-color: $veryLightRed;
+            color: $white;
+        }
+    }
+
+    &__cta2 {
+        background: transparent;
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $lightRed;
+        }
+    }
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
