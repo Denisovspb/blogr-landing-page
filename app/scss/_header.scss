@@ -1,5 +1,5 @@
 .header {
-    background: url(../../images/bg-pattern-intro.svg), linear-gradient(to right, $lightOrange, $lightRed2);
+    background: url(../images/bg-pattern-intro.svg), linear-gradient(to right, $lightOrange, $lightRed2);
     background-position: center left;
     border-radius: 0 0 0 100px;
     text-align: center;
@@ -122,7 +122,7 @@
         margin-right: 0.5rem;
 
         &::after {
-            content: url(../../images/icon-arrow-light.svg);
+            content: url(../images/icon-arrow-light.svg);
             margin-left: 0.5rem;
             display: inline-block;
             transition: all 250ms ease-in-out;
@@ -206,7 +206,7 @@
         }
 
         &::after {
-            content: url(../../images/icon-arrow-dark.svg);
+            content: url(../images/icon-arrow-dark.svg);
             margin-left: 0.5rem;
             display: inline-block;
             transition: all 250ms ease-in-out;
