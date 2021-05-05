@@ -576,8 +576,8 @@ ul {
 }
 
 .services {
-  background: url(../../images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
-  background: url(../../images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
+  background: url(../images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+  background: url(../images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
   background-repeat: no-repeat;
   background-position: left bottom;
   border-radius: 0 100px 0 100px;
