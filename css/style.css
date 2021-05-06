@@ -175,8 +175,8 @@ ul {
 }
 
 .header {
-  background: url(../images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
-  background: url(../images/bg-pattern-intro.svg), linear-gradient(to right, #ff8f70, #ff3d54);
+  background: url(../../images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: url(../../images/bg-pattern-intro.svg), linear-gradient(to right, #ff8f70, #ff3d54);
   background-position: center left;
   border-radius: 0 0 0 100px;
   text-align: center;
@@ -236,7 +236,7 @@ ul {
   display: block;
   width: 2rem;
   height: 0.125rem;
-  background-color: #25252d;
+  background-color: #FFFFFF;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   -webkit-transform-origin: 5px 1px;
@@ -301,7 +301,7 @@ ul {
 }
 
 .header__link::after {
-  content: url(../images/icon-arrow-light.svg);
+  content: url(../../images/icon-arrow-light.svg);
   margin-left: 0.5rem;
   display: inline-block;
   -webkit-transition: all 250ms ease-in-out;
@@ -384,7 +384,7 @@ ul {
 }
 
 .header__burger-link::after {
-  content: url(../images/icon-arrow-dark.svg);
+  content: url(../../images/icon-arrow-dark.svg);
   margin-left: 0.5rem;
   display: inline-block;
   -webkit-transition: all 250ms ease-in-out;
@@ -576,8 +576,8 @@ ul {
 }
 
 .services {
-  background: url(../images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
-  background: url(../images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
+  background: url(../../images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+  background: url(../../images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
   background-repeat: no-repeat;
   background-position: left bottom;
   border-radius: 0 100px 0 100px;
