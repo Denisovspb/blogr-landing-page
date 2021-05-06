@@ -6,9 +6,15 @@
 
 - <b>Solution url:</b> <a href="https://Denisovspb.github.io/blogr-landing-page/">Solution url</a>
 
-## Design screenshot
+## Design screenshots
+
+### Desktop
 
 ![](https://res.cloudinary.com/dz209s6jk/image/upload/v1615479876/Challenges/n4uf9zl8yiqiyfsxtn2o.jpg)
+
+### Mobile
+
+![](https://res.cloudinary.com/dz209s6jk/image/upload/v1615479912/Challenges/uh00kl55r1amokmjkums.jpg)
 
 ## What I used
 
